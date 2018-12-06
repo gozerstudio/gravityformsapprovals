@@ -360,7 +360,6 @@ class GF_Approvals extends GFFeedAddOn {
 					<?php
 					if ( $current_user_is_approver ) {
 						?>
-						<form method="post" id="sidebar_form" enctype='multipart/form-data'>
 							<?php wp_nonce_field( 'gf_approvals' );	?>
 							<button name="gf_approvals_status" value="approved" type="submit" class="button">
 								<?php echo $approve_icon; ?> <?php _e( 'Approve', 'gravityformsapprovals' ); ?>
@@ -368,7 +367,6 @@ class GF_Approvals extends GFFeedAddOn {
 							<button name="gf_approvals_status" value="rejected" type="submit" class="button">
 								<?php echo $reject_icon; ?> <?php _e( 'Reject', 'gravityformsapprovals' ); ?>
 							</button>
-						</form>
 					<?php
 					}
 					?>
